@@ -181,6 +181,17 @@ img {
   border-radius: 10px;
   display: block;
 }
+#project{
+    padding:10px;
+    margin:10px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#project:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+}
 
 .projects-title {
   color: var(--blue);
@@ -258,6 +269,9 @@ img {
 
   .hero-section h3 {
     font-size: 1.1rem;
+  }
+   #skills{
+    padding:10px;
   }
 
   .about-me,
