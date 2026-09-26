@@ -275,9 +275,12 @@ img {
   }
 
   .about-me,
-  #skills,
-  #portfolio {
+  #skills
+  {
     padding: 2rem 0;
+  }
+   #projects{
+    padding-right: 30px;
   }
 
   .skill-card {
