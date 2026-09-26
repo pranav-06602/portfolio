@@ -1,150 +1,306 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-:root {
-    --html: #F97316;
-    --css: #2563EB;
-    --javascript: #EAB308;
-    --bootstrap: #7C3AED;
-}
-.html-card {
-    background-color: var(--html);
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranav | Frontend Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark header">
+  <div class="container" id="main-wrapper">
 
-.css-card {
-    background-color: var(--css);
-}
+    <a class="navbar-brand fs-2 fw-semibold" href="#">Pranav</a>
 
-.js-card {
-    background-color: var(--javascript);
-}
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-.bootstrap-card {
-    background-color: var(--bootstrap);
-}
-body{
-    font-family: 'Poppins', sans-serif;
-    background: #f5f5f5;
-}
-.container{
-    max-width:1400px !important;
-}
-.header{
-    background: #0F172A;
-}
-.hero-wrapper{
-    padding: 90px 0;
-    background:linear-gradient(135deg, #f9fafb, #c8c9cd);
-}
- .hero-section .profile-image-wrapper img{
-    max-width: 300px;
-    min-width: 150px;
-    max-height: 300px;
-    min-height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    aspect-ratio: 1/1;
-    overflow: hidden;
-    margin-bottom: 20px;
-    border: 5px solid #0F172A;
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
 
-}
-/* about me */
-.about-me {
-    padding: 90px 0;
-    background: linear-gradient(135deg, #fff 0%, #f3f4f6 100%)
-}
-#about-me .tech-wrapper{
-    background: linear-gradient(135deg,#0F172A,#334155);
-}
-#about-me .tech-wrapper .tech a {
-    display: inline-block;
-    margin: 10px;
-    height: auto;
-    max-width: 80px;
-}
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
 
-#about-me .tech-wrapper .tech a img{
-   
-    width: 100%;
-    min-width: 100px;
-    margin: 10px;
-    transition:  0.5s ease-in-out;
-}
-#about-me .tech-wrapper .tech a img:hover{
-    transform: scale(1.2);
-    
-}
-#about-me .bar .bar-length{
-    max-width:280px;
-    width: 100%;
-    min-width: 50px;
-    height: 10px;
-    border-radius: 5px;
-    background-color: #0F172A;    
-}
-#about-me .bar .bar-length .bar-length-90{
-     max-width:270px;
-     width: 100%;
-     border-radius: 5px;
-     min-width: 20px;
-     height: 10px;
-  
-}
-#about-me .bar .bar-length .bar-fill-80{
-     max-width:260px;
-     width: 100%;
-     min-width: 20px;
-     height: 10px;
-     border-radius: 5px;
-    
-}
-#about-me .bar-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-top: 20px;
-    padding-bottom: 40px;
-    border-radius: 15px;
-   box-shadow:0 10px 30px rgba(15,23,42,0.08);
-    background-color: #FFFFFF;
-    width: 310px;
-}
-#portfolio-section{
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    padding: 50px 0;
-    
-}
-#portfolio h3{
-   color: #2563EB;
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 1.1;
-     letter-spacing: 2px;
-    margin-bottom: 15px;
-}
-#portfolio h2 {
-    color: #111827;
-    font-size: 42px;
-    font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 20px;
-}
-#portfolio  p {
-    color: #6B7280;
-    font-size: 16px;
-    line-height: 1.7;
-    
-    
-}
-#project1, #project2{
-    margin-bottom: 30px;
-    border-radius: 10px;
-    padding: 10px;
-    box-shadow: 0 4px 8px rgba(79, 70, 70, 0.8);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+
+      </ul>
+    </div>
+
+
+
+  </div>
+</nav>
+
+ <!-- Hero Section -->
+<div class="hero-wrapper">
+  <div class="container" id="hero-wrapper">
+     <div class="row hero-section p-4 p-md-5">
+        <div class="col-lg-6 order-1 order-lg-0">
+          <div class="profile-image-wrapper d-flex justify-content-center">
+            <img class="img-fluid" src="assets/images/profile image.png" alt="Hero Image">
+          </div>
+        </div>
+        <div class="col-lg-6 text-center text-lg-start order-0 order-lg-1">
+          <h3 style="color: #64748B;">Hello, I'm</h3>
+          <h1 class="fw-bold" style="color: #0F172A;">Pranav</h1>
+          <h3 class="fw-bold" style="color: #2563EB;">Frontend Developer</h3>
+          <p style="color: #475569;">Passionate web developer specializing in building exceptional frontend experiences. With expertise in Html, CSS, and JavaScript,Bootstrap. I transform complex problems into elegant, scalable solutions that make a real impact</p>
+          <div class="skills fw-bold fs-3 mb-2" style="color: #0F172A;">SKILLS</div>
+
+          <div class="skills-list d-flex justify-content-center justify-content-lg-start">
+            <ul class="list-unstyled d-flex flex-wrap justify-content-center justify-content-lg-start gap-3">
+              <li class="fw-bold"><img src="assets/images/icons8-html-5-50.svg" alt="HTML">HTML</li>
+              <li class="fw-bold mx-md-4"><img src="assets/images/icons8-css3.svg" alt="CSS">CSS</li>
+              <li class="fw-bold"><img src="assets/images/icons8-javascript.svg" alt="JavaScript">JavaScript</li>
+              <li class="fw-bold"><img src="assets/images/icons8-bootstrap.svg" alt="Bootstrap">Bootstrap</li>
+              <li class="fw-bold"><img src="assets/images/icons8-wordpress.svg" alt="WordPress">WordPress</li>
+            </ul>
+          </div>
+          <button class="btn btn-primary mt-3 px-5 py-2 fs-5 fw-bold">View Projects</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="about-me">
+  <div class="container" id="about">
+    <h3 class="title fw-bold fs-2" style="color:#0F172A;">About <span style="color:#2563EB;">Me</span></h3>
+
+    <div class="row gy-4">
+      <div class="col-md-6">
+        <div class="tech-wrapper d-flex flex-column align-items-center gap-3">
+          <div class="tech">
+
+            <p class="fs-5">I'm a Frontend Developer from Kerala with hands-on experience building and customizing responsive websites using HTML, CSS, JavaScript, Bootstrap and WordPress.<br><br> I've worked on business websites, redesigned existing websites, and built responsive interfaces based on client requirements.</p>
+            <button class="btn btn-primary px-5 py-2 fs-5 fw-bold">Download Resume</button>
+          </div>
+
+        </div>
+
+
+      </div>
+
+      <div class="col-md-6">
+        <div class="info-section d-flex flex-column gap-4">
+
+    <div class="d-flex align-items-start gap-3">
+      <div class="info-icon d-flex align-items-center justify-content-center flex-shrink-0">
+       <i class="bi bi-geo-alt"></i>
+      </div>
+      <div>
+        <div class="info-label fs-4 fw-semibold">Location</div>
+        <div class="info-value">Kollam, Kerala</div>
+      </div>
+    </div>
+
+    <div class="d-flex align-items-start gap-3">
+      <div class="info-icon d-flex align-items-center justify-content-center flex-shrink-0">
+        <i class="bi bi-envelope-fill"></i>
+      </div>
+      <div>
+        <div class="info-label fs-4 fw-semibold">Email</div>
+        <div class="info-value">pranavrajmohan@gmail.com</div>
+      </div>
+    </div>
+
+    <div class="d-flex align-items-start gap-3">
+      <div class="info-icon d-flex align-items-center justify-content-center flex-shrink-0">
+        <i class="bi bi-briefcase-fill"></i>
+      </div>
+      <div>
+        <div class="info-label fs-4 fw-semibold">Experience</div>
+        <div class="info-value">3-month internship<br>(Square Bracket Innovations)</div>
+      </div>
+    </div>
+
+    <div class="d-flex align-items-start gap-3">
+      <div class="info-icon d-flex align-items-center justify-content-center flex-shrink-0">
+        <i class="bi bi-chat-dots-fill"></i>
+      </div>
+      <div>
+        <div class="info-label fs-4 fw-semibold">Languages</div>
+        <div class="info-value">English, Malayalam</div>
+      </div>
+    </div>
+
+  </div>
+
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!--Skills Section-->
+<div class="container" id="skills">
+  <h3 class="title fs-2">Skills</h3>
+
+  <div class="row g-3">
+
+    <div class="col-6 col-sm-4 col-lg">
+      <div class="skill-card">
+        <div class="skill-icon html-card">
+          <i class="bi bi-filetype-html"></i>
+        </div>
+        <div class="skill-title">HTML</div>
+        <p class="skill-desc">Semantic HTML • Forms • Accessibility</p>
+      </div>
+    </div>
+
+    <div class="col-6 col-sm-4 col-lg">
+      <div class="skill-card">
+        <div class="skill-icon css-card">
+          <i class="bi bi-filetype-css"></i>
+        </div>
+        <div class="skill-title">CSS</div>
+        <p class="skill-desc">Flexbox • Grid • Responsive Design </p>
+      </div>
+    </div>
+
+    <div class="col-6 col-sm-4 col-lg">
+      <div class="skill-card">
+        <div class="skill-icon js-card">
+          <i class="bi bi-filetype-js"></i>
+        </div>
+        <div class="skill-title">JavaScript</div>
+        <p class="skill-desc">DOM • Events • Arrays • ES6+</p>
+      </div>
+    </div>
+
+    <div class="col-6 col-sm-4 col-lg">
+      <div class="skill-card">
+        <div class="skill-icon bootstrap-card">
+          <i class="bi bi-bootstrap-fill"></i>
+        </div>
+        <div class="skill-title">Bootstrap</div>
+        <p class="skill-desc">Responsive Layouts • Components • Utilities</p>
+      </div>
+    </div>
+
+    <div class="col-6 col-sm-4 col-lg">
+      <div class="skill-card">
+        <div class="skill-icon wordpress-card">
+          <i class="bi bi-wordpress"></i>
+        </div>
+        <div class="skill-title">WordPress</div>
+        <p class="skill-desc">Themes • Plugins • Elementor Customization</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!--portfolio section-->
+
+<div class="container" id="projects">
+  <h3 class="projects-title fs-1">Projects</h3>
+  <h2>Featured Websites and Projects</h2>
+  <p>Explore a selection of my recent work, showcasing my skills in frontend development and design. Each project highlights my ability to create responsive, user-friendly, and visually appealing websites that meet client needs and exceed expectations.</p>
+
+  <div class="row g-4" id="portfolio-section">
+    <div class="col-md-6 col-lg-4" id="project1">
+
+      <a href="https://pranav-06602.github.io/volkswagon/" target="_blank"><img src="assets/images/Screenshot 2026-09-15 111329.png" alt="Project 1" class="img-fluid"></a>
+       <h3 class="project-title">Volkswagen Website(inspired)</h3>
+      <p class="project-tech">HTML • CSS • JavaScript</p>
+      <p class="project-description">Recreated the landing page with responsive layouts, navigation, hero sections and interactive UI</p>
+    </div>
+    <div class="col-md-6 col-lg-4" id="project2">
+
+      <a href="https://pranav-06602.github.io/ROUTEX-TEST-DESIGN/" target="_blank"><img src="assets/images/routex.png" alt="Project 2" class="img-fluid"></a>
+      <h3 class="project-title">ROUTEX Test Design</h3>
+      <p class="project-tech">HTML • CSS • Bootstrap</p>
+      <p class="project-description">Designed and implemented a responsive layout for a test project, focusing on user experience and visual appeal.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer-section" id="contact" style="background-color:#0F172A; color:#94A3B8;">
+  <div class="container py-5">
+    <div class="row gy-4">
+
+      <!-- Brand / About -->
+      <div class="col-md-4">
+        <h3 class="fw-bold mb-3" style="color:#FFFFFF;">Pranav</h3>
+        <p class="mb-0" style="color:#94A3B8;">
+          Frontend Developer crafting clean, responsive, and user-friendly web experiences with HTML, CSS, JavaScript, Bootstrap, and WordPress.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-4 ps-md-5">
+
+        <h5 class="fw-bold mb-3" style="color:#FFFFFF;">Quick Links</h5>
+        <div class="d-flex flex-wrap gap-4 gap-md-5">
+
+            <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+            <li><a href="#" class="footer-link" style="color:#94A3B8; text-decoration:none;">Home</a></li>
+            <li><a href="#about" class="footer-link" style="color:#94A3B8; text-decoration:none;">About</a></li>
+            <li><a href="#skills" class="footer-link" style="color:#94A3B8; text-decoration:none;">Skills</a></li>
+
+          </ul>
+          <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+              <li><a href="#projects" class="footer-link" style="color:#94A3B8; text-decoration:none;">Projects</a></li>
+              <li><a href="#contact" class="footer-link" style="color:#94A3B8; text-decoration:none;">Contact</a></li>
+          </ul>
+
+        </div>
+
+
+      </div>
+
+      <!-- Social / Contact -->
+      <div class="col-md-4">
+        <h5 class="fw-bold mb-3" style="color:#FFFFFF;">Let's Connect</h5>
+        <div class="d-flex align-items-center gap-3 mb-3 flex-wrap">
+          <a class="contact-link" href="https://github.com/pranav-06602" target="_blank" style="color:#94A3B8;"><i class="bi bi-github fs-4"></i></a>
+          <a class="contact-link" href="https://www.linkedin.com/in/pranav-rajmohan-155a61415/" target="_blank" style="color:#94A3B8;"><i class="bi bi-linkedin fs-4"></i></a>
+          
+          <a class="contact-link d-flex align-items-center gap-2" href="mailto:pranavrajmohan@gmail.com" style="color:#94A3B8; text-decoration:none;"><i class="bi bi-envelope-fill fs-5"></i><span>pranavrajmohan@gmail.com</span></a>
+        </div>
+
+        <a href="tel:+919207070524" class="mb-0" style="color:#94A3B8; text-decoration:none;">+919207070524</a>
+      </div>
+
+    </div>
+
+    <hr style="border-color:#334155;">
+
+    <div class="text-center pt-2">
+      <p class="mb-0" style="color:#64748B;">&copy; <span id="year"></span> Pranav. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
