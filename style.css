@@ -181,6 +181,7 @@ img {
   border-radius: 10px;
   display: block;
 }
+
 #project{
     padding:10px;
     margin:10px;
@@ -270,17 +271,18 @@ img {
   .hero-section h3 {
     font-size: 1.1rem;
   }
-   #skills{
-    padding:10px;
-  }
 
   .about-me,
   #skills
-  {
+   {
     padding: 2rem 0;
   }
-   #projects{
+  #projects{
     padding-right: 30px;
+  }
+
+  #skills{
+    padding:10px;
   }
 
   .skill-card {
